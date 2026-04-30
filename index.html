@@ -835,7 +835,7 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
       <p class="sec-sub" style="margin:0 auto;" data-ro="Echipa Kevora îți răspunde în cel mult 24 de ore." data-ru="Команда Kevora ответит вам в течение 24 часов.">Echipa Kevora îți răspunde în cel mult 24 de ore.</p>
     </div>
     <div class="contact-grid">
-      <form class="contact-form reveal" data-delay="0.1" onsubmit="submitForm(event)" action="https://formspree.io/f/xqenkdvq" method="POST">
+      <form class="contact-form reveal" data-delay="0.1" onsubmit="submitForm(event)" action="https://api.web3forms.com/submit" method="POST">
         <div class="form-row">
           <div class="fg">
             <label data-ro="Nume complet" data-ru="Полное имя">Nume complet</label>
@@ -1030,9 +1030,11 @@ function submitForm(e){
   });
   if(ok){
     var form=e.target;
-    fetch('https://formspree.io/f/xqenkdvq',{
+    fetch('https://api.web3forms.com/submit',{
       method:'POST',
       body:JSON.stringify({
+        access_key:'fc13deba-675b-4797-9588-604e63264f5f',
+        subject:'Cerere nouă — Kevora.md',
         Nume:document.getElementById('fn').value,
         Telefon:document.getElementById('fp').value,
         Email:document.getElementById('fe').value,
@@ -1045,13 +1047,13 @@ function submitForm(e){
       }
     }).then(function(r){
       return r.json().then(function(data){
-        if(r.ok){
+        if(data.success){
           var s=document.getElementById('fs');
           s.style.display='block';
           form.reset();
           setTimeout(function(){s.style.display='none';},5000);
         } else {
-          alert('Eroare Formspree: '+(data.error||JSON.stringify(data))+'\n\nContactați-ne pe WhatsApp: +373 600 111 14');
+          alert('Eroare: '+(data.message||'necunoscută')+'\n\nContactați-ne pe WhatsApp: +373 600 111 14');
         }
       });
     }).catch(function(err){
