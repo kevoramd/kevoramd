@@ -839,20 +839,20 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
         <div class="form-row">
           <div class="fg">
             <label data-ro="Nume complet" data-ru="Полное имя">Nume complet</label>
-            <input type="text" id="fn" data-ro-placeholder="Ion Popescu" data-ru-placeholder="Иван Иванов" placeholder="Ion Popescu">
+            <input type="text" id="fn" name="Nume" data-ro-placeholder="Ion Popescu" data-ru-placeholder="Иван Иванов" placeholder="Ion Popescu">
           </div>
           <div class="fg">
             <label data-ro="Telefon" data-ru="Телефон">Telefon</label>
-            <input type="tel" id="fp" placeholder="+373 600 111 14">
+            <input type="tel" id="fp" name="Telefon" placeholder="+373 600 111 14">
           </div>
         </div>
         <div class="fg">
           <label>Email</label>
-          <input type="email" id="fe" placeholder="email@exemplu.com">
+          <input type="email" id="fe" name="Email" placeholder="email@exemplu.com">
         </div>
         <div class="fg">
           <label data-ro="Tipul spațiului" data-ru="Тип помещения">Tipul spațiului</label>
-          <select id="ft">
+          <select id="ft" name="Tip spatiu">
             <option value="" data-ro="Selectează..." data-ru="Выберите...">Selectează...</option>
             <option value="apt" data-ro="Apartament" data-ru="Квартира">Apartament</option>
             <option value="house" data-ro="Casă" data-ru="Дом">Casă</option>
@@ -862,7 +862,7 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
         </div>
         <div class="fg">
           <label data-ro="Mesaj (opțional)" data-ru="Сообщение (необязательно)">Mesaj (opțional)</label>
-          <textarea id="fm" data-ro-placeholder="Descrieți pe scurt ce aveți în vedere..." data-ru-placeholder="Кратко опишите, что вы имеете в виду..." placeholder="Descrieți pe scurt ce aveți în vedere..."></textarea>
+          <textarea id="fm" name="Mesaj" data-ro-placeholder="Descrieți pe scurt ce aveți în vedere..." data-ru-placeholder="Кратко опишите, что вы имеете в виду..." placeholder="Descrieți pe scurt ce aveți în vedere..."></textarea>
         </div>
         <div class="form-success" id="fs" data-ro="✓ Cererea a fost trimisă! Vă contactăm în 24 ore." data-ru="✓ Запрос отправлен! Свяжемся с вами в течение 24 часов.">✓ Cererea a fost trimisă! Vă contactăm în 24 ore.</div>
         <button type="submit" class="btn-submit" data-ro="Trimite Cererea →" data-ru="Отправить запрос →">Trimite Cererea →</button>
