@@ -1030,23 +1030,32 @@ function submitForm(e){
   });
   if(ok){
     var form=e.target;
-    var data=new FormData(form);
-    data.append('Nume',document.getElementById('fn').value);
-    data.append('Telefon',document.getElementById('fp').value);
-    data.append('Email',document.getElementById('fe').value);
-    data.append('Tip spatiu',document.getElementById('ft').value);
-    data.append('Mesaj',document.getElementById('fm').value);
     fetch('https://formspree.io/f/xqenkdvq',{
       method:'POST',
-      body:data,
-      headers:{Accept:'application/json'}
+      body:JSON.stringify({
+        Nume:document.getElementById('fn').value,
+        Telefon:document.getElementById('fp').value,
+        Email:document.getElementById('fe').value,
+        'Tip spatiu':document.getElementById('ft').value,
+        Mesaj:document.getElementById('fm').value
+      }),
+      headers:{
+        'Accept':'application/json',
+        'Content-Type':'application/json'
+      }
     }).then(function(r){
-      var s=document.getElementById('fs');
-      s.style.display='block';
-      form.reset();
-      setTimeout(function(){s.style.display='none';},5000);
-    }).catch(function(){
-      alert(lang==='ru'?'Eroare la trimitere. Contactați-ne pe WhatsApp.':'Eroare la trimitere. Contactați-ne pe WhatsApp.');
+      return r.json().then(function(data){
+        if(r.ok){
+          var s=document.getElementById('fs');
+          s.style.display='block';
+          form.reset();
+          setTimeout(function(){s.style.display='none';},5000);
+        } else {
+          alert('Eroare Formspree: '+(data.error||JSON.stringify(data))+'\n\nContactați-ne pe WhatsApp: +373 600 111 14');
+        }
+      });
+    }).catch(function(err){
+      alert('Eroare la trimitere: '+err+'\n\nContactați-ne pe WhatsApp: +373 600 111 14');
     });
   }
 }
