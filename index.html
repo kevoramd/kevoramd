@@ -258,36 +258,92 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
 @keyframes waBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 .float-wa svg{width:28px;height:28px;fill:#fff;}
 
+/* ── PACKAGES v2 ── */
+.pkg-subtitle{font-size:.83rem;color:var(--silver);line-height:1.5;margin-bottom:16px;}
+.pkg-free-badge{background:rgba(34,197,94,.07);border:1px solid rgba(34,197,94,.18);color:#86efac;border-radius:6px;padding:7px 10px;font-size:.75rem;font-weight:600;text-align:center;margin-bottom:16px;letter-spacing:.02em;}
+.pkg-free-badge.gold-badge{background:rgba(201,169,110,.07);border-color:rgba(201,169,110,.2);color:var(--gold);}
+
+/* ── SUBSCRIPTIONS v2 ── */
+.sub-fear{background:rgba(239,68,68,.05);border:1px solid rgba(239,68,68,.2);border-radius:12px;padding:24px 28px;margin-bottom:20px;}
+.sub-fear-title{font-size:.95rem;font-weight:700;color:#fca5a5;margin-bottom:14px;}
+.sub-fear-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 40px;}
+.fear-item{font-size:.87rem;color:rgba(252,165,165,.85);line-height:1.5;}
+.sub-benefits{margin-bottom:20px;}
+.sub-ben-title{font-size:.9rem;font-weight:700;color:#86efac;margin-bottom:18px;}
+.sub-ben-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
+.sub-ben{background:var(--mid);border:1px solid rgba(34,197,94,.12);border-radius:12px;padding:20px 16px;text-align:center;transition:border-color .3s;}
+.sub-ben:hover{border-color:rgba(34,197,94,.3);}
+.sub-ben-icon{font-size:1.5rem;margin-bottom:8px;}
+.sub-ben p{font-size:.8rem;color:var(--silver);line-height:1.55;}
+.sub-lockin{background:rgba(59,139,235,.05);border:1px solid rgba(59,139,235,.15);border-radius:12px;padding:18px 24px;margin-bottom:20px;display:flex;align-items:center;flex-wrap:wrap;gap:12px;}
+.sub-lockin-label{font-size:.83rem;font-weight:700;color:var(--blue1);white-space:nowrap;}
+.sub-lockin-tags{display:flex;flex-wrap:wrap;gap:8px;}
+.sub-lockin-tag{background:rgba(59,139,235,.1);border:1px solid rgba(59,139,235,.2);color:var(--cream);border-radius:20px;padding:5px 14px;font-size:.78rem;}
+.sub-price-trigger{text-align:center;font-size:1rem;color:var(--silver);margin-bottom:32px;padding:16px;background:rgba(255,255,255,.03);border-radius:10px;border:1px solid rgba(255,255,255,.06);}
+.sub-price-trigger strong{color:var(--cream);font-size:1.15rem;}
+.sub-plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px;}
+.sub-plan{background:var(--mid);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:32px 28px;display:flex;flex-direction:column;position:relative;transition:transform .3s;}
+.sub-plan-featured{border-color:rgba(59,139,235,.45);transform:translateY(-8px);background:linear-gradient(160deg,#1a2035,#141830);}
+.sub-plan-name{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--silver);margin-bottom:10px;}
+.sub-plan-price{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:400;letter-spacing:-.02em;line-height:1;margin-bottom:4px;}
+.sub-plan-sub{font-size:.8rem;color:var(--muted);margin-bottom:20px;}
+.sub-plan-divider{height:1px;background:rgba(255,255,255,.07);margin-bottom:16px;}
+.sub-plan-features{list-style:none;flex:1;display:flex;flex-direction:column;gap:9px;margin-bottom:24px;}
+.sub-plan-features li{font-size:.83rem;color:var(--silver);line-height:1.5;padding-left:18px;position:relative;}
+.sub-plan-features li::before{content:'✓';position:absolute;left:0;color:var(--blue1);font-size:.8rem;font-weight:700;}
+.sub-trust{text-align:center;font-size:.92rem;color:var(--muted);font-style:italic;border-top:1px solid rgba(255,255,255,.06);padding-top:24px;}
+
 /* ── RESPONSIVE 1024px ── */
 @media(max-width:1024px){
   :root{--pad:72px 40px;}
   .nav-links{display:none;}
   .hamburger{display:flex;}
   .nav-right .btn-blue{display:none;}
-  .smarthome-grid,.guarantee-grid,.sub-grid,.contact-grid{grid-template-columns:1fr;}
+  .smarthome-grid,.guarantee-grid,.contact-grid{grid-template-columns:1fr;}
   .sm-img,.g-img{height:320px;}
   .packages-grid{grid-template-columns:1fr 1fr;}
   .pkg.featured{transform:none;}
   .footer-inner{grid-template-columns:1fr;text-align:center;}
   .footer-links{justify-content:center;}
+  .sub-ben-grid{grid-template-columns:repeat(3,1fr);}
+  .sub-plans{grid-template-columns:1fr;}
+  .sub-plan-featured{transform:none;}
+  .sub-fear-grid{grid-template-columns:1fr;}
+  .sub-lockin{flex-direction:column;align-items:flex-start;}
 }
 
 /* ── RESPONSIVE 640px ── */
 @media(max-width:640px){
-  :root{--pad:56px 20px;}
+  :root{--pad:48px 20px;}
   .nav-inner{padding:0 20px;}
   .hero-content{padding:0 20px;}
-  .hero-h1{font-size:1.95rem;}
+  .hero-h1{font-size:1.95rem;line-height:1.1;}
   .hero-h1 em.blue{display:block;}
   .hero-scroll{left:20px;}
-  .hero-stats{gap:24px;}
+  .hero-btns{flex-direction:column;gap:10px;}
+  .hero-btns .btn-blue,.hero-btns .btn-outline{width:100%;justify-content:center;padding:15px 20px;font-size:.95rem;}
+  .hero-stats{gap:16px;flex-wrap:wrap;}
+  .hero-stat{min-width:calc(50% - 8px);}
   .stat-num{font-size:2rem;}
+  .sec-title{font-size:clamp(1.6rem,6.5vw,2.4rem);}
   .packages-grid{grid-template-columns:1fr;}
+  .pkg{padding:24px 20px;}
   .services-grid{grid-template-columns:1fr;}
+  .svc{padding:28px 20px;}
   .form-row{grid-template-columns:1fr;}
-  footer{padding:48px 20px;}
+  footer{padding:40px 20px;}
+  .footer-inner{gap:24px;}
   .scenario-card{width:280px;}
-  .sc-img{height:280px;}
+  .sc-img{height:260px;}
+  .sub-ben-grid{grid-template-columns:repeat(2,1fr);}
+  .sub-plans{grid-template-columns:1fr;}
+  .sub-plan-featured{transform:none;}
+  .sub-fear-grid{grid-template-columns:1fr;}
+  .sub-lockin{flex-direction:column;align-items:flex-start;}
+  .sub-plan{padding:24px 20px;}
+  .guarantee-grid{gap:32px;}
+  .smarthome-grid{gap:40px;}
+  .hero-stats{margin-bottom:0;}
 }
 </style>
 </head>
@@ -543,23 +599,25 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
     <div class="reveal" style="text-align:center;">
       <div class="sec-label" data-ro="Pachete" data-ru="Пакеты">Pachete</div>
       <h2 class="sec-title" data-ro="Alege pachetul tău" data-ru="Выберите свой пакет">Alege pachetul tău</h2>
-      <p class="sec-sub" style="margin:0 auto;" data-ro="Fiecare pachet include echipamente, instalare profesională și ecosistem Kevora propriu." data-ru="Каждый пакет включает оборудование, профессиональную установку и собственную экосистему Kevora.">Fiecare pachet include echipamente, instalare profesională și ecosistem Kevora propriu.</p>
+      <p class="sec-sub" style="margin:0 auto;" data-ro="Alege pachetul potrivit și îți transformăm casa într-o locuință inteligentă în 24h" data-ru="Выберите подходящий пакет и превратим ваш дом в умный за 24 часа">Alege pachetul potrivit și îți transformăm casa într-o locuință inteligentă în 24h</p>
     </div>
     <div class="packages-grid reveal" data-delay="0.1">
 
       <!-- LITE -->
       <div class="pkg">
         <div class="pkg-name" data-ro="KEVORA LITE" data-ru="KEVORA LITE">KEVORA LITE</div>
+        <div class="pkg-subtitle" data-ro="Control inteligent de bază pentru casa ta" data-ru="Базовый умный контроль для вашего дома">Control inteligent de bază pentru casa ta</div>
         <div class="pkg-price">9.999 <span style="font-size:1.2rem;font-family:'DM Sans',sans-serif;color:var(--silver);">lei</span></div>
-        <div class="pkg-sub" data-ro="Abonament: 99 lei / lună" data-ru="Абонемент: 99 лей / месяц">Abonament: 99 lei / lună</div>
+        <div class="pkg-sub" data-ro="+ 99 lei / lună abonament" data-ru="+ 99 лей / месяц абонемент">+ 99 lei / lună abonament</div>
+        <div class="pkg-free-badge" data-ro="🎁 Include 3 luni abonament GRATUIT" data-ru="🎁 Включает 3 месяца абонемента БЕСПЛАТНО">🎁 Include 3 luni abonament GRATUIT</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-features">
-          <li data-ro="3 întrerupătoare smart (simple sau duble)" data-ru="3 умных выключателя (одинарных или двойных)">3 întrerupătoare smart (simple sau duble)</li>
-          <li data-ro="2 prize smart" data-ru="2 умные розетки">2 prize smart</li>
-          <li data-ro="1 senzor de mișcare" data-ru="1 датчик движения">1 senzor de mișcare</li>
-          <li data-ro="1 senzor de apă" data-ru="1 датчик воды">1 senzor de apă</li>
-          <li data-ro="1 senzor ușă/geam" data-ru="1 датчик двери/окна">1 senzor ușă/geam</li>
-          <li data-ro="Ecosistem Kevora — funcționează fără internet, datele rămân la tine" data-ru="Экосистема Kevora — работает без интернета, данные остаются у вас">Ecosistem Kevora — funcționează fără internet, datele rămân la tine</li>
+          <li data-ro="Controlezi luminile din telefon, oricând" data-ru="Управляйте светом с телефона, когда угодно">Controlezi luminile din telefon, oricând</li>
+          <li data-ro="Știi instant dacă e apă pe jos" data-ru="Мгновенно узнаёте об утечке воды">Știi instant dacă e apă pe jos</li>
+          <li data-ro="Ușa și geamul — monitorizate automat" data-ru="Дверь и окно — мониторинг автоматически">Ușa și geamul — monitorizate automat</li>
+          <li data-ro="Automatizări simple, fără bătaie de cap" data-ru="Простая автоматизация без лишних хлопот">Automatizări simple, fără bătaie de cap</li>
+          <li data-ro="Start rapid și accesibil" data-ru="Быстрый и доступный старт">Start rapid și accesibil</li>
+          <li data-ro="Fără cloud — datele rămân la tine" data-ru="Без облака — данные остаются у вас">Fără cloud — datele rămân la tine</li>
         </ul>
         <button class="pkg-btn pkg-btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-ro="Solicită Ofertă" data-ru="Запросить предложение">Solicită Ofertă</button>
       </div>
@@ -568,16 +626,18 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
       <div class="pkg featured">
         <div class="pkg-badge blue" data-ro="⭐ Cel mai popular" data-ru="⭐ Самый популярный">⭐ CEL MAI POPULAR</div>
         <div class="pkg-name" data-ro="KEVORA PLUS" data-ru="KEVORA PLUS">KEVORA PLUS</div>
+        <div class="pkg-subtitle" data-ro="Confort zilnic și automatizare inteligentă" data-ru="Ежедневный комфорт и умная автоматизация">Confort zilnic și automatizare inteligentă</div>
         <div class="pkg-price">13.999 <span style="font-size:1.2rem;font-family:'DM Sans',sans-serif;color:var(--silver);">lei</span></div>
-        <div class="pkg-sub" data-ro="Abonament: 199 lei / lună" data-ru="Абонемент: 199 лей / месяц">Abonament: 199 lei / lună</div>
+        <div class="pkg-sub" data-ro="+ 199 lei / lună abonament" data-ru="+ 199 лей / месяц абонемент">+ 199 lei / lună abonament</div>
+        <div class="pkg-free-badge" data-ro="🎁 Include 3 luni abonament GRATUIT" data-ru="🎁 Включает 3 месяца абонемента БЕСПЛАТНО">🎁 Include 3 luni abonament GRATUIT</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-features">
-          <li data-ro="4 întrerupătoare smart (simple sau duble)" data-ru="4 умных выключателя (одинарных или двойных)">4 întrerupătoare smart (simple sau duble)</li>
-          <li data-ro="3 prize smart" data-ru="3 умные розетки">3 prize smart</li>
-          <li data-ro="2 senzori de mișcare" data-ru="2 датчика движения">2 senzori de mișcare</li>
-          <li data-ro="2 senzori de apă" data-ru="2 датчика воды">2 senzori de apă</li>
-          <li data-ro="Climate control — încălzire autonomă" data-ru="Климат-контроль — автономное отопление">Climate control — încălzire autonomă</li>
-          <li data-ro="Ecosistem Kevora — funcționează fără internet, datele rămân la tine" data-ru="Экосистема Kevora — работает без интернета, данные остаются у вас">Ecosistem Kevora — funcționează fără internet, datele rămân la tine</li>
+          <li data-ro="Tot ce include Lite, plus:" data-ru="Всё из Lite, плюс:">Tot ce include Lite, plus:</li>
+          <li data-ro="Temperatura se reglează automat" data-ru="Температура регулируется автоматически">Temperatura se reglează automat</li>
+          <li data-ro="Economisești energie în fiecare lună" data-ru="Экономите энергию каждый месяц">Economisești energie în fiecare lună</li>
+          <li data-ro="Casa reacționează singură (plecare, noapte)" data-ru="Дом реагирует сам (уход, ночь)">Casa reacționează singură (plecare, noapte)</li>
+          <li data-ro="Scenarii automate personalizate" data-ru="Персонализированные сценарии">Scenarii automate personalizate</li>
+          <li data-ro="Senzori extinși — protecție completă" data-ru="Расширенные датчики — полная защита">Senzori extinși — protecție completă</li>
         </ul>
         <button class="pkg-btn pkg-btn-blue" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-ro="Solicită Ofertă" data-ru="Запросить предложение">Solicită Ofertă</button>
       </div>
@@ -585,18 +645,18 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
       <!-- PRO -->
       <div class="pkg">
         <div class="pkg-name" data-ro="KEVORA PRO" data-ru="KEVORA PRO">KEVORA PRO</div>
+        <div class="pkg-subtitle" data-ro="Siguranță completă și control total" data-ru="Полная безопасность и полный контроль">Siguranță completă și control total</div>
         <div class="pkg-price">23.999 <span style="font-size:1.2rem;font-family:'DM Sans',sans-serif;color:var(--silver);">lei</span></div>
-        <div class="pkg-sub" data-ro="Abonament: 299 lei / lună" data-ru="Абонемент: 299 лей / месяц">Abonament: 299 lei / lună</div>
+        <div class="pkg-sub" data-ro="+ 299 lei / lună abonament" data-ru="+ 299 лей / месяц абонемент">+ 299 lei / lună abonament</div>
+        <div class="pkg-free-badge" data-ro="🎁 Include 3 luni abonament GRATUIT" data-ru="🎁 Включает 3 месяца абонемента БЕСПЛАТНО">🎁 Include 3 luni abonament GRATUIT</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-features">
-          <li data-ro="6 întrerupătoare smart (simple sau duble)" data-ru="6 умных выключателей (одинарных или двойных)">6 întrerupătoare smart (simple sau duble)</li>
-          <li data-ro="5 prize smart" data-ru="5 умных розеток">5 prize smart</li>
-          <li data-ro="3 senzori de mișcare" data-ru="3 датчика движения">3 senzori de mișcare</li>
-          <li data-ro="3 senzori de apă" data-ru="3 датчика воды">3 senzori de apă</li>
-          <li data-ro="Climate control — încălzire autonomă" data-ru="Климат-контроль — автономное отопление">Climate control — încălzire autonomă</li>
-          <li data-ro="Electrovană smart — oprire automată la scurgere" data-ru="Умный электроклапан — автоматическое отключение при утечке">Electrovană smart — oprire automată la scurgere</li>
-          <li data-ro="Sistem irigații smart" data-ru="Система умного полива">Sistem irigații smart</li>
-          <li data-ro="Ecosistem Kevora — funcționează fără internet, datele rămân la tine" data-ru="Экосистема Kevora — работает без интернета, данные остаются у вас">Ecosistem Kevora — funcționează fără internet, datele rămân la tine</li>
+          <li data-ro="Tot ce include Plus, plus:" data-ru="Всё из Plus, плюс:">Tot ce include Plus, plus:</li>
+          <li data-ro="Apa se oprește automat la orice scurgere" data-ru="Вода отключается при любой утечке">Apa se oprește automat la orice scurgere</li>
+          <li data-ro="Control complet de oriunde din lume" data-ru="Полный контроль из любой точки мира">Control complet de oriunde din lume</li>
+          <li data-ro="Climatizare smart (AC integrat)" data-ru="Умная климатизация (AC)">Climatizare smart (AC integrat)</li>
+          <li data-ro="Liniște totală chiar și când lipsești" data-ru="Полное спокойствие, даже когда вас нет">Liniște totală chiar și când lipsești</li>
+          <li data-ro="Automatizări avansate nelimitate" data-ru="Неограниченная расширенная автоматизация">Automatizări avansate nelimitate</li>
         </ul>
         <button class="pkg-btn pkg-btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-ro="Solicită Ofertă" data-ru="Запросить предложение">Solicită Ofertă</button>
       </div>
@@ -605,15 +665,17 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
       <div class="pkg custom-pkg">
         <div class="pkg-badge gold" data-ro="+ PERSONALIZAT" data-ru="+ ПЕРСОНАЛИЗИРОВАННЫЙ">+ PERSONALIZAT</div>
         <div class="pkg-name gold-name" data-ro="KEVORA CUSTOM" data-ru="KEVORA CUSTOM">KEVORA CUSTOM</div>
-        <div class="pkg-price gold-price" data-ro="Preț la cerere" data-ru="Цена по запросу">Preț la cerere</div>
+        <div class="pkg-subtitle" style="color:rgba(201,169,110,.8);" data-ro="Sistem inteligent complet personalizat" data-ru="Полностью персонализированная умная система">Sistem inteligent complet personalizat</div>
+        <div class="pkg-price gold-price">De la 29.999 <span style="font-size:1.2rem;font-family:'DM Sans',sans-serif;color:var(--silver);">lei</span></div>
         <div class="pkg-sub" data-ro="Abonament personalizat" data-ru="Персонализированный абонемент">Abonament personalizat</div>
+        <div class="pkg-free-badge gold-badge" data-ro="🎁 Include 3 luni abonament GRATUIT" data-ru="🎁 Включает 3 месяца абонемента БЕСПЛАТНО">🎁 Include 3 luni abonament GRATUIT</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-features">
-          <li class="gold-check" data-ro="Soluție complet personalizată" data-ru="Полностью персонализированное решение">Soluție complet personalizată</li>
-          <li class="gold-check" data-ro="Spații comerciale, birouri, proiecte mari" data-ru="Коммерческие помещения, офисы, крупные проекты">Spații comerciale, birouri, proiecte mari</li>
-          <li class="gold-check" data-ro="Proiectare individuală a sistemului" data-ru="Индивидуальное проектирование системы">Proiectare individuală a sistemului</li>
-          <li class="gold-check" data-ro="Număr nelimitat de dispozitive" data-ru="Неограниченное количество устройств">Număr nelimitat de dispozitive</li>
-          <li class="gold-check" data-ro="Consultație dedicată gratuită" data-ru="Бесплатная персональная консультация">Consultație dedicată gratuită</li>
+          <li class="gold-check" data-ro="Dispozitive nelimitate, proiect complet" data-ru="Неограниченное количество устройств">Dispozitive nelimitate, proiect complet</li>
+          <li class="gold-check" data-ro="Consultant dedicat de la prima întâlnire" data-ru="Выделенный консультант с первой встречи">Consultant dedicat de la prima întâlnire</li>
+          <li class="gold-check" data-ro="Integrare completă casă sau afacere" data-ru="Полная интеграция дома или бизнеса">Integrare completă casă sau afacere</li>
+          <li class="gold-check" data-ro="Spații comerciale, birouri, vile" data-ru="Коммерческие помещения, офисы, виллы">Spații comerciale, birouri, vile</li>
+          <li class="gold-check" data-ro="Prioritate maximă la suport și instalare" data-ru="Максимальный приоритет поддержки">Prioritate maximă la suport și instalare</li>
         </ul>
         <button class="pkg-btn pkg-btn-gold" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-ro="Solicită Ofertă Personalizată" data-ru="Запросить персональное предложение">Solicită Ofertă Personalizată</button>
       </div>
@@ -663,97 +725,111 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
 <!-- SUBSCRIPTIONS -->
 <section id="subscriptions" class="sec">
   <div style="max-width:1360px;margin:0 auto;">
-    <div class="reveal">
+
+    <div class="reveal" style="text-align:center;max-width:800px;margin:0 auto 56px;">
       <div class="sec-label" data-ro="Abonamente" data-ru="Абонементы">Abonamente</div>
-      <h2 class="sec-title" data-ro="De ce ai nevoie de abonamentul Kevora?" data-ru="Зачем вам абонемент Kevora?">De ce ai nevoie de abonamentul Kevora?</h2>
-      <p class="sec-sub" data-ro="Abonamentul menține sistemul tău în perfectă stare cu monitorizare continuă și suport dedicat." data-ru="Абонемент поддерживает вашу систему в идеальном состоянии с непрерывным мониторингом и выделенной поддержкой.">Abonamentul menține sistemul tău în perfectă stare cu monitorizare continuă și suport dedicat.</p>
+      <h2 class="sec-title" data-ro="Sistemul tău funcționează la capacitate maximă doar cu abonament Kevora" data-ru="Ваша система работает на полную мощность только с абонементом Kevora">Sistemul tău funcționează la capacitate maximă doar cu abonament Kevora</h2>
+      <p class="sec-sub" style="margin:0 auto;" data-ro="Monitorizare, protecție și suport — fără griji, 24/7" data-ru="Мониторинг, защита и поддержка — без забот, 24/7">Monitorizare, protecție și suport — fără griji, 24/7</p>
     </div>
-    <div class="sub-grid reveal" data-delay="0.1">
-      <div class="sub-cards">
-        <div class="sub-card">
-          <div class="sub-card-icon">👁️</div>
-          <div>
-            <h4 data-ro="Monitorizare 24/7" data-ru="Мониторинг 24/7">Monitorizare 24/7</h4>
-            <p data-ro="Dacă ceva nu e în regulă, știm noi primii. Alertă instantă pe telefonul tău." data-ru="Если что-то не так, мы узнаём первыми. Мгновенное оповещение на ваш телефон.">Dacă ceva nu e în regulă, știm noi primii. Alertă instantă pe telefonul tău.</p>
-          </div>
-        </div>
-        <div class="sub-card">
-          <div class="sub-card-icon">🔄</div>
-          <div>
-            <h4 data-ro="Update-uri automate" data-ru="Автоматические обновления">Update-uri automate</h4>
-            <p data-ro="Software mereu actualizat fără niciun efort din partea ta." data-ru="Программное обеспечение всегда актуально без каких-либо усилий с вашей стороны.">Software mereu actualizat fără niciun efort din partea ta.</p>
-          </div>
-        </div>
-        <div class="sub-card">
-          <div class="sub-card-icon">☎️</div>
-          <div>
-            <h4 data-ro="Suport tehnic prioritar" data-ru="Приоритетная техподдержка">Suport tehnic prioritar</h4>
-            <p data-ro="Răspuns garantat în maximum 4 ore de la sesizare." data-ru="Гарантированный ответ в течение максимум 4 часов от момента обращения.">Răspuns garantat în maximum 4 ore de la sesizare.</p>
-          </div>
-        </div>
-        <div class="sub-card">
-          <div class="sub-card-icon">💾</div>
-          <div>
-            <h4 data-ro="Backup & securitate" data-ru="Резервное копирование и безопасность">Backup & securitate</h4>
-            <p data-ro="Configurațiile tale salvate și protejate. Restaurare rapidă dacă e necesar." data-ru="Ваши настройки сохранены и защищены. Быстрое восстановление при необходимости.">Configurațiile tale salvate și protejate. Restaurare rapidă dacă e necesar.</p>
-          </div>
-        </div>
-        <div class="sub-card">
-          <div class="sub-card-icon">📊</div>
-          <div>
-            <h4 data-ro="Rapoarte energetice lunare" data-ru="Ежемесячные энергетические отчёты">Rapoarte energetice lunare</h4>
-            <p data-ro="Știi exact cât consumi și unde poți economisi mai mult." data-ru="Знаете точно, сколько потребляете и где можете сэкономить больше.">Știi exact cât consumi și unde poți economisi mai mult.</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="sub-table">
-          <div class="sub-table-head">
-            <div class="sub-th" data-ro="Beneficiu" data-ru="Преимущество">Beneficiu</div>
-            <div class="sub-th blue">Lite<br><span style="font-weight:400;color:var(--muted);">99 lei</span></div>
-            <div class="sub-th blue">Plus<br><span style="font-weight:400;color:var(--muted);">199 lei</span></div>
-            <div class="sub-th blue">Pro<br><span style="font-weight:400;color:var(--muted);">299 lei</span></div>
-            <div class="sub-th" style="color:var(--gold);">Custom</div>
-          </div>
-          <div class="sub-table-row">
-            <div class="sub-td" data-ro="Monitorizare 24/7" data-ru="Мониторинг 24/7">Monitorizare 24/7</div>
-            <div class="sub-td" style="text-align:center;color:var(--blue1);">✓</div>
-            <div class="sub-td" style="text-align:center;color:var(--blue1);">✓</div>
-            <div class="sub-td" style="text-align:center;color:var(--blue1);">✓</div>
-            <div class="sub-td" style="text-align:center;color:var(--gold);">✓</div>
-          </div>
-          <div class="sub-table-row">
-            <div class="sub-td" data-ro="Update-uri automate" data-ru="Авт. обновления">Update-uri automate</div>
-            <div class="sub-td" style="text-align:center;color:var(--blue1);">✓</div>
-            <div class="sub-td" style="text-align:center;color:var(--blue1);">✓</div>
-            <div class="sub-td" style="text-align:center;color:var(--blue1);">✓</div>
-            <div class="sub-td" style="text-align:center;color:var(--gold);">✓</div>
-          </div>
-          <div class="sub-table-row">
-            <div class="sub-td" data-ro="Suport prioritar 4h" data-ru="Поддержка 4ч">Suport prioritar 4h</div>
-            <div class="sub-td" style="text-align:center;color:var(--muted);">—</div>
-            <div class="sub-td" style="text-align:center;color:var(--blue1);">✓</div>
-            <div class="sub-td" style="text-align:center;color:var(--blue1);">✓</div>
-            <div class="sub-td" style="text-align:center;color:var(--gold);">✓</div>
-          </div>
-          <div class="sub-table-row">
-            <div class="sub-td" data-ro="Backup ecosistem" data-ru="Резервное копирование">Backup ecosistem</div>
-            <div class="sub-td" style="text-align:center;color:var(--muted);">—</div>
-            <div class="sub-td" style="text-align:center;color:var(--blue1);">✓</div>
-            <div class="sub-td" style="text-align:center;color:var(--blue1);">✓</div>
-            <div class="sub-td" style="text-align:center;color:var(--gold);">✓</div>
-          </div>
-          <div class="sub-table-row">
-            <div class="sub-td" data-ro="Rapoarte energetice" data-ru="Энерг. отчёты">Rapoarte energetice</div>
-            <div class="sub-td" style="text-align:center;color:var(--muted);">—</div>
-            <div class="sub-td" style="text-align:center;color:var(--muted);">—</div>
-            <div class="sub-td" style="text-align:center;color:var(--blue1);">✓</div>
-            <div class="sub-td" style="text-align:center;color:var(--gold);">✓</div>
-          </div>
-        </div>
-        <div class="sub-note" data-ro="Fără abonament activ, suportul tehnic prioritar nu este disponibil." data-ru="Без активного абонемента приоритетная техническая поддержка недоступна.">Fără abonament activ, suportul tehnic prioritar nu este disponibil.</div>
+
+    <div class="sub-fear reveal" data-delay="0.05">
+      <div class="sub-fear-title" data-ro="⚠️ Fără abonament:" data-ru="⚠️ Без абонемента:">⚠️ Fără abonament:</div>
+      <div class="sub-fear-grid">
+        <div class="fear-item" data-ro="❌ Nu ai suport prioritar" data-ru="❌ Нет приоритетной поддержки">❌ Nu ai suport prioritar</div>
+        <div class="fear-item" data-ro="❌ Nu ai monitorizare activă" data-ru="❌ Нет активного мониторинга">❌ Nu ai monitorizare activă</div>
+        <div class="fear-item" data-ro="❌ Nu ai backup sistem" data-ru="❌ Нет резервного копирования">❌ Nu ai backup sistem</div>
+        <div class="fear-item" data-ro="❌ Intervențiile sunt contra cost (de la 500 lei)" data-ru="❌ Вмешательства за дополнительную плату (от 500 лей)">❌ Intervențiile sunt contra cost (de la 500 lei)</div>
       </div>
     </div>
+
+    <div class="sub-benefits reveal" data-delay="0.1">
+      <div class="sub-ben-title" data-ro="✅ Cu abonament Kevora:" data-ru="✅ С абонементом Kevora:">✅ Cu abonament Kevora:</div>
+      <div class="sub-ben-grid">
+        <div class="sub-ben">
+          <div class="sub-ben-icon">🔍</div>
+          <p data-ro="Detectăm problemele înainte să devină costisitoare" data-ru="Обнаруживаем проблемы до того, как они станут дорогостоящими">Detectăm problemele înainte să devină costisitoare</p>
+        </div>
+        <div class="sub-ben">
+          <div class="sub-ben-icon">⚡</div>
+          <p data-ro="Rezolvăm orice problemă în maxim 4 ore" data-ru="Решаем любую проблему максимум за 4 часа">Rezolvăm orice problemă în maxim 4 ore</p>
+        </div>
+        <div class="sub-ben">
+          <div class="sub-ben-icon">💾</div>
+          <p data-ro="Nu pierzi niciodată setările sistemului" data-ru="Вы никогда не теряете настройки системы">Nu pierzi niciodată setările sistemului</p>
+        </div>
+        <div class="sub-ben">
+          <div class="sub-ben-icon">🔔</div>
+          <p data-ro="Primești notificări instant în caz de pericol" data-ru="Уведомления мгновенно при опасности">Primești notificări instant în caz de pericol</p>
+        </div>
+        <div class="sub-ben">
+          <div class="sub-ben-icon">📊</div>
+          <p data-ro="Vezi exact unde consumi și cum economisești" data-ru="Видите где тратите и как экономите">Vezi exact unde consumi și cum economisești</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-lockin reveal" data-delay="0.15">
+      <div class="sub-lockin-label" data-ro="🔐 Exclusiv cu abonament:" data-ru="🔐 Только с абонементом:">🔐 Exclusiv cu abonament:</div>
+      <div class="sub-lockin-tags">
+        <span class="sub-lockin-tag" data-ro="Automatizări avansate" data-ru="Расширенная автоматизация">Automatizări avansate</span>
+        <span class="sub-lockin-tag" data-ro="Monitorizare la distanță" data-ru="Удалённый мониторинг">Monitorizare la distanță</span>
+        <span class="sub-lockin-tag" data-ro="Alerte inteligente (apă/gaz)" data-ru="Умные оповещения (вода/газ)">Alerte inteligente (apă/gaz)</span>
+        <span class="sub-lockin-tag" data-ro="Backup sistem" data-ru="Резервное копирование">Backup sistem</span>
+      </div>
+    </div>
+
+    <div class="sub-price-trigger reveal" data-delay="0.2" data-ro="De la doar <strong>3 lei / zi</strong> pentru liniștea ta" data-ru="Всего от <strong>3 лей / день</strong> за ваш покой">De la doar <strong>3 lei / zi</strong> pentru liniștea ta</div>
+
+    <div class="sub-plans reveal" data-delay="0.25">
+
+      <div class="sub-plan">
+        <div class="sub-plan-name" data-ro="ABONAMENT LITE" data-ru="АБОНЕМЕНТ LITE">ABONAMENT LITE</div>
+        <div class="sub-plan-price">99 <span style="font-size:1rem;font-family:'DM Sans',sans-serif;color:var(--muted);" data-ro="lei / lună" data-ru="лей / мес">lei / lună</span></div>
+        <div class="sub-plan-sub" data-ro="≈ 3 lei / zi" data-ru="≈ 3 лея / день">≈ 3 lei / zi</div>
+        <div class="sub-plan-divider"></div>
+        <ul class="sub-plan-features">
+          <li data-ro="Monitorizare 24/7" data-ru="Мониторинг 24/7">Monitorizare 24/7</li>
+          <li data-ro="Update-uri automate" data-ru="Авт. обновления">Update-uri automate</li>
+          <li data-ro="Suport standard" data-ru="Стандартная поддержка">Suport standard</li>
+        </ul>
+        <button class="pkg-btn pkg-btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-ro="Alege Lite" data-ru="Выбрать Lite">Alege Lite</button>
+      </div>
+
+      <div class="sub-plan sub-plan-featured">
+        <div class="pkg-badge blue" data-ro="⭐ CEL MAI ALES" data-ru="⭐ САМЫЙ ВЫБИРАЕМЫЙ">⭐ CEL MAI ALES</div>
+        <div class="sub-plan-name" data-ro="ABONAMENT PLUS" data-ru="АБОНЕМЕНТ PLUS">ABONAMENT PLUS</div>
+        <div class="sub-plan-price">199 <span style="font-size:1rem;font-family:'DM Sans',sans-serif;color:var(--muted);" data-ro="lei / lună" data-ru="лей / мес">lei / lună</span></div>
+        <div class="sub-plan-sub" data-ro="≈ 6 lei / zi" data-ru="≈ 6 лей / день">≈ 6 lei / zi</div>
+        <div class="sub-plan-divider"></div>
+        <ul class="sub-plan-features">
+          <li data-ro="Monitorizare 24/7" data-ru="Мониторинг 24/7">Monitorizare 24/7</li>
+          <li data-ro="Update-uri automate" data-ru="Авт. обновления">Update-uri automate</li>
+          <li data-ro="Suport prioritar în 4 ore" data-ru="Поддержка за 4 часа">Suport prioritar în 4 ore</li>
+          <li data-ro="Backup ecosistem complet" data-ru="Полное резервное копирование">Backup ecosistem complet</li>
+        </ul>
+        <button class="pkg-btn pkg-btn-blue" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-ro="Alege Plus" data-ru="Выбрать Plus">Alege Plus</button>
+      </div>
+
+      <div class="sub-plan">
+        <div class="sub-plan-name" data-ro="ABONAMENT PRO" data-ru="АБОНЕМЕНТ PRO">ABONAMENT PRO</div>
+        <div class="sub-plan-price">299 <span style="font-size:1rem;font-family:'DM Sans',sans-serif;color:var(--muted);" data-ro="lei / lună" data-ru="лей / мес">lei / lună</span></div>
+        <div class="sub-plan-sub" data-ro="≈ 10 lei / zi" data-ru="≈ 10 лей / день">≈ 10 lei / zi</div>
+        <div class="sub-plan-divider"></div>
+        <ul class="sub-plan-features">
+          <li data-ro="Monitorizare 24/7" data-ru="Мониторинг 24/7">Monitorizare 24/7</li>
+          <li data-ro="Update-uri automate" data-ru="Авт. обновления">Update-uri automate</li>
+          <li data-ro="Suport prioritar în 4 ore" data-ru="Поддержка за 4 часа">Suport prioritar în 4 ore</li>
+          <li data-ro="Backup ecosistem complet" data-ru="Полное резервное копирование">Backup ecosistem complet</li>
+          <li data-ro="Rapoarte energetice lunare" data-ru="Ежемес. энерг. отчёты">Rapoarte energetice lunare</li>
+          <li data-ro="Consultant prioritar dedicat" data-ru="Выделенный консультант">Consultant prioritar dedicat</li>
+        </ul>
+        <button class="pkg-btn pkg-btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-ro="Alege Pro" data-ru="Выбрать Pro">Alege Pro</button>
+      </div>
+
+    </div>
+
+    <div class="sub-trust reveal" data-delay="0.3" data-ro="💬 Majoritatea clienților aleg abonamentul pentru siguranță și suport complet" data-ru="💬 Большинство клиентов выбирают абонемент ради безопасности и полной поддержки">💬 Majoritatea clienților aleg abonamentul pentru siguranță și suport complet</div>
+
   </div>
 </section>
 
