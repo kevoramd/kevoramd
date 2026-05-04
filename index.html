@@ -1207,6 +1207,13 @@ window.addEventListener('scroll',function(){
     a.style.background=active?'rgba(255,255,255,.06)':'';
   });
 },{passive:true});
+
+// ── Prevent pinch-zoom (iOS Safari ignores viewport user-scalable) ──
+document.addEventListener('touchmove',function(e){
+  if(e.touches.length>1){e.preventDefault();}
+},{passive:false});
+document.addEventListener('gesturestart',function(e){e.preventDefault();});
+document.addEventListener('gesturechange',function(e){e.preventDefault();});
 </script>
 </body>
 </html>
