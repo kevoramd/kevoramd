@@ -484,6 +484,7 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
 <!-- Mobile menu -->
 <div class="mobile-menu" id="mobMenu">
   <button class="mob-close" onclick="closeMenu()">✕</button>
+  <a href="#about" onclick="closeMenu()" data-ro="Despre" data-ru="О нас">Despre</a>
   <a href="#smarthome" onclick="closeMenu()" data-ro="Smart Home" data-ru="Smart Home">Smart Home</a>
   <a href="#services" onclick="closeMenu()" data-ro="Servicii" data-ru="Услуги">Servicii</a>
   <a href="#why" onclick="closeMenu()" data-ro="De ce Kevora" data-ru="Почему Kevora">De ce Kevora</a>
@@ -501,6 +502,7 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
       <span class="logo-k">KEVORA</span><span class="logo-md">.md</span>
     </a>
     <div class="nav-links">
+      <a href="#about" data-ro="Despre" data-ru="О нас">Despre</a>
       <a href="#smarthome" data-ro="Smart Home" data-ru="Smart Home">Smart Home</a>
       <a href="#services" data-ro="Servicii" data-ru="Услуги">Servicii</a>
       <a href="#packages" data-ro="Pachete" data-ru="Пакеты">Pachete</a>
@@ -529,7 +531,7 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
   <div class="hero-content">
     <div class="hero-tag reveal">
       <span class="hero-dot"></span>
-      <span data-ro="Smart Home Moldova" data-ru="Smart Home Молдова">Smart Home Moldova</span>
+      <span data-ro="Securitate și confort. Local. Pentru casa ta." data-ru="Безопасность и комфорт. Локально. Для вашего дома.">Securitate și confort. Local. Pentru casa ta.</span>
     </div>
     <h1 class="hero-h1 reveal" data-delay="0.1" data-ro='Transformă-ți casa<br>într-un spațiu <em class="blue">inteligent</em>' data-ru='Превратите ваш дом<br>в умное <em class="blue">пространство</em>'>
       Transformă-ți casa<br>într-un spațiu <em class="blue">inteligent</em>
@@ -541,16 +543,21 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
     </div>
     <div class="hero-stats reveal" data-delay="0.4">
       <div class="hero-stat">
-        <div class="stat-num"><span class="cnt" data-target="47">0</span><span class="stat-suf">+</span></div>
-        <div class="stat-label" data-ro="Case Smart" data-ru="Умных домов">Case Smart</div>
+        <div class="stat-num" style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,2.6vw,2.4rem);font-weight:400;line-height:1.05;letter-spacing:-.02em;">
+          <span data-ro="Lansare" data-ru="Запуск">Lansare</span><br>
+          <span style="color:var(--blue1);" data-ro="Primăvara 2026" data-ru="Весна 2026">Primăvara 2026</span>
+        </div>
+        <div class="stat-label" data-ro="Acceptăm primii clienți" data-ru="Принимаем первых клиентов">Acceptăm primii clienți</div>
       </div>
       <div class="hero-stat">
-        <div class="stat-num" style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:700;line-height:1;letter-spacing:-.03em;">Zeci de</div>
-        <div class="stat-label" data-ro="Clienți mulțumiți" data-ru="Довольных клиентов">Clienți mulțumiți</div>
+        <div class="stat-num"><span class="cnt" data-target="5">0</span></div>
+        <div class="stat-label" data-ro="Locuri pentru beta-clienți" data-ru="Мест для бета-клиентов">Locuri pentru beta-clienți</div>
       </div>
       <div class="hero-stat">
-        <div class="stat-num"><span class="cnt" data-target="280">0</span><span class="stat-suf">+</span></div>
-        <div class="stat-label" data-ro="Dispozitive instalate" data-ru="Установленных устройств">Dispozitive instalate</div>
+        <div class="stat-num" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,3.6vw,3.2rem);font-weight:400;line-height:1.05;letter-spacing:-.02em;color:var(--gold);">
+          <span data-ro="−30%" data-ru="−30%">−30%</span>
+        </div>
+        <div class="stat-label" data-ro="Reducere pentru primii 5" data-ru="Скидка для первых 5">Reducere pentru primii 5</div>
       </div>
     </div>
   </div>
@@ -724,8 +731,8 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
     <div class="why-grid reveal" data-delay="0.1">
       <div class="why-item">
         <div class="why-icon">⚡</div>
-        <div class="why-title" data-ro="Instalare în 24h" data-ru="Установка за 24 часа">Instalare în 24h</div>
-        <div class="why-desc" data-ro="Vii azi, mâine casa ta e smart. Echipa noastră instalează rapid și fără deranj." data-ru="Пришли сегодня — завтра ваш дом умный. Наша команда устанавливает быстро и без неудобств.">Vii azi, mâine casa ta e smart. Echipa noastră instalează rapid și fără deranj.</div>
+        <div class="why-title" data-ro="Instalare planificată" data-ru="Запланированная установка">Instalare planificată</div>
+        <div class="why-desc" data-ro="Stabilim împreună ziua, venim pregătiți. Instalare tipică 1-3 zile, fără surprize, fără mizerie în casă." data-ru="Согласовываем день вместе, приходим подготовленными. Типичная установка 1-3 дня, без сюрпризов, без беспорядка в доме.">Stabilim împreună ziua, venim pregătiți. Instalare tipică 1-3 zile, fără surprize, fără mizerie în casă.</div>
       </div>
       <div class="why-item">
         <div class="why-icon">🔒</div>
@@ -752,24 +759,23 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
     <div class="reveal" style="text-align:center;">
       <div class="sec-label" data-ro="Pachete" data-ru="Пакеты">Pachete</div>
       <h2 class="sec-title" data-ro="Alege pachetul tău" data-ru="Выберите свой пакет">Alege pachetul tău</h2>
-      <p class="sec-sub" style="margin:0 auto;" data-ro="Alege pachetul potrivit și îți transformăm casa într-o locuință inteligentă în 24h" data-ru="Выберите подходящий пакет и превратим ваш дом в умный за 24 часа">Alege pachetul potrivit și îți transformăm casa într-o locuință inteligentă în 24h</p>
+      <p class="sec-sub" style="margin:0 auto;" data-ro="Alege pachetul potrivit pentru spațiul tău. Instalare planificată, fără grabă, fără compromisuri." data-ru="Выберите пакет, подходящий вашему пространству. Запланированная установка, без спешки, без компромиссов.">Alege pachetul potrivit pentru spațiul tău. Instalare planificată, fără grabă, fără compromisuri.</p>
     </div>
     <div class="packages-grid reveal" data-delay="0.1">
 
       <!-- LITE -->
       <div class="pkg">
-        <div class="pkg-name" data-ro="KEVORA LITE" data-ru="KEVORA LITE">KEVORA LITE</div>
-        <div class="pkg-subtitle" data-ro="Control inteligent de bază pentru casa ta" data-ru="Базовый умный контроль для вашего дома">Control inteligent de bază pentru casa ta</div>
-        <div class="pkg-price">9.999 <span style="font-size:1.2rem;font-family:'DM Sans',sans-serif;color:var(--silver);">lei</span></div>
-        <div class="pkg-sub" data-ro="+ 99 lei / lună abonament" data-ru="+ 99 лей / месяц абонемент">+ 99 lei / lună abonament</div>
-        <div class="pkg-free-badge" data-ro="🎁 Include 3 luni abonament GRATUIT" data-ru="🎁 Включает 3 месяца абонемента БЕСПЛАТНО">🎁 Include 3 luni abonament GRATUIT</div>
+        <div class="pkg-name" data-ro="KEVORA ESSENTIAL" data-ru="KEVORA ESSENTIAL">KEVORA ESSENTIAL</div>
+        <div class="pkg-subtitle" data-ro="Apartament până la 40mp · Primii pași în smart home, fără bătăi de cap" data-ru="Квартира до 40 м² · Первые шаги в smart home, без хлопот">Apartament până la 40mp · Primii pași în smart home, fără bătăi de cap</div>
+        <div class="pkg-price">14.999 <span style="font-size:1.2rem;font-family:'DM Sans',sans-serif;color:var(--silver);">lei</span></div>
+        <div class="pkg-sub" data-ro="Suport prioritar opțional: 199 lei/lună" data-ru="Опциональная приоритетная поддержка: 199 лей/мес">Suport prioritar opțional: 199 lei/lună</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-features">
-          <li data-ro="Controlezi luminile din telefon, oricând" data-ru="Управляйте светом с телефона, когда угодно">Controlezi luminile din telefon, oricând</li>
-          <li data-ro="Știi instant dacă e apă pe jos" data-ru="Мгновенно узнаёте об утечке воды">Știi instant dacă e apă pe jos</li>
-          <li data-ro="Ușa și geamul — monitorizate automat" data-ru="Дверь и окно — мониторинг автоматически">Ușa și geamul — monitorizate automat</li>
-          <li data-ro="Automatizări simple, fără bătaie de cap" data-ru="Простая автоматизация без лишних хлопот">Automatizări simple, fără bătaie de cap</li>
-          <li data-ro="Start rapid și accesibil" data-ru="Быстрый и доступный старт">Start rapid și accesibil</li>
+          <li data-ro="Control prize și iluminat din telefon" data-ru="Управление розетками и освещением с телефона">Control prize și iluminat din telefon</li>
+          <li data-ro="Senzor mișcare — alertă la prezență neașteptată" data-ru="Датчик движения — оповещение о неожиданном присутствии">Senzor mișcare — alertă la prezență neașteptată</li>
+          <li data-ro="Senzor scurgere apă — notificare instant pe telefon" data-ru="Датчик утечки воды — мгновенное уведомление">Senzor scurgere apă — notificare instant pe telefon</li>
+          <li data-ro="Hub local Kevora — sistemul rulează la tine acasă" data-ru="Локальный хаб Kevora — система работает у вас дома">Hub local Kevora — sistemul rulează la tine acasă</li>
+          <li data-ro="Configurare și instalare incluse" data-ru="Настройка и установка включены">Configurare și instalare incluse</li>
           <li data-ro="Fără cloud — datele rămân la tine" data-ru="Без облака — данные остаются у вас">Fără cloud — datele rămân la tine</li>
         </ul>
         <button class="pkg-btn pkg-btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-ro="Activează casa smart" data-ru="Активируй умный дом">Activează casa smart</button>
@@ -779,10 +785,9 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
       <div class="pkg featured">
         <div class="pkg-badge blue" data-ro="⭐ Cel mai popular" data-ru="⭐ Самый популярный">⭐ CEL MAI POPULAR</div>
         <div class="pkg-name" data-ro="KEVORA PLUS" data-ru="KEVORA PLUS">KEVORA PLUS</div>
-        <div class="pkg-subtitle" data-ro="Confort zilnic și automatizare inteligentă" data-ru="Ежедневный комфорт и умная автоматизация">Confort zilnic și automatizare inteligentă</div>
+        <div class="pkg-subtitle" data-ro="Apartament 40-100mp · Iluminat, climă, scenarii automate" data-ru="Квартира 40-100 м² · Свет, климат, автоматические сценарии">Apartament 40-100mp · Iluminat, climă, scenarii automate</div>
         <div class="pkg-price">13.999 <span style="font-size:1.2rem;font-family:'DM Sans',sans-serif;color:var(--silver);">lei</span></div>
-        <div class="pkg-sub" data-ro="+ 199 lei / lună abonament" data-ru="+ 199 лей / месяц абонемент">+ 199 lei / lună abonament</div>
-        <div class="pkg-free-badge" data-ro="🎁 Include 3 luni abonament GRATUIT" data-ru="🎁 Включает 3 месяца абонемента БЕСПЛАТНО">🎁 Include 3 luni abonament GRATUIT</div>
+        <div class="pkg-sub" data-ro="Suport prioritar opțional: 299 lei/lună" data-ru="Опциональная приоритетная поддержка: 299 лей/мес">Suport prioritar opțional: 299 lei/lună</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-features">
           <li data-ro="Tot ce include Lite, plus:" data-ru="Всё из Lite, плюс:">Tot ce include Lite, plus:</li>
@@ -798,10 +803,9 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
       <!-- PRO -->
       <div class="pkg">
         <div class="pkg-name" data-ro="KEVORA PRO" data-ru="KEVORA PRO">KEVORA PRO</div>
-        <div class="pkg-subtitle" data-ro="Siguranță completă și control total" data-ru="Полная безопасность и полный контроль">Siguranță completă și control total</div>
+        <div class="pkg-subtitle" data-ro="Apartament 100-150mp · Sistem complet, climă, securitate, jaluzele" data-ru="Квартира 100-150 м² · Полная система, климат, безопасность, жалюзи">Apartament 100-150mp · Sistem complet, climă, securitate, jaluzele</div>
         <div class="pkg-price">23.999 <span style="font-size:1.2rem;font-family:'DM Sans',sans-serif;color:var(--silver);">lei</span></div>
-        <div class="pkg-sub" data-ro="+ 299 lei / lună abonament" data-ru="+ 299 лей / месяц абонемент">+ 299 lei / lună abonament</div>
-        <div class="pkg-free-badge" data-ro="🎁 Include 3 luni abonament GRATUIT" data-ru="🎁 Включает 3 месяца абонемента БЕСПЛАТНО">🎁 Include 3 luni abonament GRATUIT</div>
+        <div class="pkg-sub" data-ro="Suport prioritar opțional: 399 lei/lună" data-ru="Опциональная приоритетная поддержка: 399 лей/мес">Suport prioritar opțional: 399 lei/lună</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-features">
           <li data-ro="Tot ce include Plus, plus:" data-ru="Всё из Plus, плюс:">Tot ce include Plus, plus:</li>
@@ -818,10 +822,9 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
       <div class="pkg custom-pkg">
         <div class="pkg-badge gold" data-ro="+ PERSONALIZAT" data-ru="+ ПЕРСОНАЛИЗИРОВАННЫЙ">+ PERSONALIZAT</div>
         <div class="pkg-name gold-name" data-ro="KEVORA CUSTOM" data-ru="KEVORA CUSTOM">KEVORA CUSTOM</div>
-        <div class="pkg-subtitle" style="color:rgba(201,169,110,.8);" data-ro="Pentru cei care vor control complet asupra întregii case" data-ru="Для тех, кто хочет полный контроль над всем домом">Pentru cei care vor control complet asupra întregii case</div>
+        <div class="pkg-subtitle" style="color:rgba(201,169,110,.8);" data-ro="Vile, case mari, business · Soluție croită exact pentru spațiul tău" data-ru="Виллы, большие дома, бизнес · Решение, созданное точно для вашего пространства">Vile, case mari, business · Soluție croită exact pentru spațiul tău</div>
         <div class="pkg-price gold-price">De la 29.999 <span style="font-size:1.2rem;font-family:'DM Sans',sans-serif;color:var(--silver);">lei</span></div>
         <div class="pkg-sub" data-ro="Abonament personalizat" data-ru="Персонализированный абонемент">Abonament personalizat</div>
-        <div class="pkg-free-badge gold-badge" data-ro="🎁 Include 3 luni abonament GRATUIT" data-ru="🎁 Включает 3 месяца абонемента БЕСПЛАТНО">🎁 Include 3 luni abonament GRATUIT</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-features">
           <li class="gold-check" data-ro="Dispozitive nelimitate, proiect complet" data-ru="Неограниченное количество устройств">Dispozitive nelimitate, proiect complet</li>
@@ -837,27 +840,21 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
   </div>
 </section>
 
-<!-- URGENCY BANNER -->
+<!-- BETA PROGRAM BANNER -->
 <div class="urgency-wrap reveal">
   <div class="urgency-bar">
-    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
-      <div class="urgency-badge" data-ro="🗓️ Mai 2026" data-ru="🗓️ Май 2026">🗓️ Mai 2026</div>
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;flex:1;">
+      <div class="urgency-badge" style="color:var(--blue1);" data-ro="✨ Program Beta" data-ru="✨ Бета-программа">✨ Program Beta</div>
       <div>
-        <div style="font-weight:700;font-size:1.05rem;color:var(--cream);margin-bottom:4px;" data-ro="Capacitate instalare limitată luna aceasta" data-ru="Ограниченная мощность установки в этом месяце">Capacitate instalare limitată luna aceasta</div>
-        <div style="font-size:.85rem;color:var(--silver);" data-ro="Acceptăm maxim 20 proiecte / lună pentru a garanta calitate" data-ru="Принимаем максимум 20 проектов/месяц для гарантии качества">Acceptăm maxim 20 proiecte / lună pentru a garanta calitate</div>
+        <div style="font-weight:700;font-size:1.05rem;color:var(--cream);margin-bottom:4px;" data-ro="Caut primii 5 clienți pentru lansarea Kevora" data-ru="Ищу первых 5 клиентов для запуска Kevora">Caut primii 5 clienți pentru lansarea Kevora</div>
+        <div style="font-size:.85rem;color:var(--silver);" data-ro="−30% reducere în schimbul drepturilor de imagine asupra proiectului (foto + video)" data-ru="−30% скидка в обмен на права на изображение проекта (фото + видео)">−30% reducere în schimbul drepturilor de imagine asupra proiectului (foto + video)</div>
       </div>
     </div>
-    <div>
-      <div class="urgency-dots">
-        <div class="urgency-dot taken"></div><div class="urgency-dot taken"></div><div class="urgency-dot taken"></div><div class="urgency-dot taken"></div><div class="urgency-dot taken"></div>
-        <div class="urgency-dot taken"></div><div class="urgency-dot taken"></div><div class="urgency-dot taken"></div><div class="urgency-dot taken"></div><div class="urgency-dot taken"></div>
-        <div class="urgency-dot taken"></div><div class="urgency-dot taken"></div><div class="urgency-dot taken"></div><div class="urgency-dot taken"></div>
-        <div class="urgency-dot available"></div><div class="urgency-dot available"></div><div class="urgency-dot available"></div><div class="urgency-dot available"></div><div class="urgency-dot available"></div><div class="urgency-dot available"></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:400;color:var(--gold);line-height:1;">
+        <span class="cnt" data-target="5">0</span>
       </div>
-      <div class="urgency-legend">
-        <span><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:rgba(239,68,68,.55);margin-right:5px;"></span><span data-ro="14 ocupate" data-ru="14 занято">14 ocupate</span></span>
-        <span><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:rgba(34,197,94,.45);margin-right:5px;"></span><span data-ro="6 disponibile" data-ru="6 доступно">6 disponibile</span></span>
-      </div>
+      <div style="font-size:.7rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;" data-ro="Locuri disponibile" data-ru="Доступных мест">Locuri disponibile</div>
     </div>
   </div>
 </div>
@@ -900,51 +897,114 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section id="testimonials">
-  <div style="max-width:1360px;margin:0 auto;padding:var(--pad);">
-    <div class="reveal" style="text-align:center;">
-      <div class="sec-label" data-ro="Ce spun clienții" data-ru="Что говорят клиенты">Ce spun clienții</div>
-      <h2 class="sec-title" data-ro="Oameni reali, case reale" data-ru="Реальные люди, реальные дома">Oameni reali, case reale</h2>
+<!-- ABOUT -->
+<section id="about" class="sec" style="background:var(--dark);">
+  <div style="max-width:1360px;margin:0 auto;">
+    <div style="display:grid;grid-template-columns:1fr 1.3fr;gap:80px;align-items:center;" class="about-grid">
+
+      <div class="reveal">
+        <div class="sec-label" data-ro="Cine suntem" data-ru="Кто мы">Cine suntem</div>
+        <h2 class="sec-title" data-ro="Un brand nou,<br>cu o viziune <em class='blue'>clară</em>" data-ru="Новый бренд,<br>с <em class='blue'>чётким</em> видением">Un brand nou,<br>cu o viziune <em class="blue">clară</em></h2>
+
+        <div style="display:flex;flex-direction:column;gap:20px;margin-top:32px;">
+
+          <p style="font-size:1rem;color:var(--silver);line-height:1.75;" data-ro="Kevora a pornit dintr-o frustrare reală. Pe piața din Moldova, <em style='color:var(--cream);font-style:normal;'>smart home</em> înseamnă, de cele mai multe ori, un bec controlabil de pe telefon. Atât. Nu există o casă care învață, anticipează, protejează." data-ru="Kevora возникла из реальной фрустрации. На рынке Молдовы <em style='color:var(--cream);font-style:normal;'>smart home</em> чаще всего означает лампу, управляемую с телефона. И всё. Не существует дома, который обучается, предвидит, защищает.">Kevora a pornit dintr-o frustrare reală. Pe piața din Moldova, <em style="color:var(--cream);font-style:normal;">smart home</em> înseamnă, de cele mai multe ori, un bec controlabil de pe telefon. Atât. Nu există o casă care învață, anticipează, protejează.</p>
+
+          <p style="font-size:1rem;color:var(--silver);line-height:1.75;" data-ro="Vin din marketing și vânzări, dar pasiunea mea reală e tehnologia care îți face viața mai simplă fără să-ți ceară atenție. Am studiat luni întregi sisteme de automatizare folosite în Europa de Vest și am construit Kevora pentru a aduce același nivel de calitate în Moldova — fără compromisuri." data-ru="Я пришёл из маркетинга и продаж, но моя настоящая страсть — технологии, которые делают вашу жизнь проще, не требуя внимания. Я месяцами изучал системы автоматизации, используемые в Западной Европе, и построил Kevora, чтобы привнести этот уровень качества в Молдову — без компромиссов.">Vin din marketing și vânzări, dar pasiunea mea reală e tehnologia care îți face viața mai simplă fără să-ți ceară atenție. Am studiat luni întregi sisteme de automatizare folosite în Europa de Vest și am construit Kevora pentru a aduce același nivel de calitate în Moldova — fără compromisuri.</p>
+
+          <p style="font-size:1rem;color:var(--silver);line-height:1.75;" data-ro="Lucrez cu o rețea de electricieni colaboratori verificați și folosesc doar echipamente cu integrare locală nativă — fără cloud străin. Sunt la început de drum, dar tocmai asta înseamnă că primii clienți primesc atenția mea totală, nu sunt al 50-lea proiect din lună." data-ru="Работаю с сетью проверенных электриков-партнёров и использую только оборудование с нативной локальной интеграцией — без иностранного облака. Я в начале пути, но именно это означает, что первые клиенты получают моё полное внимание, а не становятся 50-м проектом месяца.">Lucrez cu o rețea de electricieni colaboratori verificați și folosesc doar echipamente cu integrare locală nativă — fără cloud străin. Sunt la început de drum, dar tocmai asta înseamnă că primii clienți primesc atenția mea totală, nu sunt al 50-lea proiect din lună.</p>
+
+        </div>
+
+        <div style="display:flex;align-items:center;gap:14px;margin-top:36px;padding-top:28px;border-top:1px solid rgba(255,255,255,.07);">
+          <div style="width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,var(--blue1),var(--blue2));display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;flex-shrink:0;">K</div>
+          <div>
+            <div style="font-weight:600;font-size:.95rem;color:var(--cream);" data-ro="[Artur V.]" data-ru="[Artur V.]">[Artur V.]</div>
+            <div style="font-size:.82rem;color:var(--silver);" data-ro="Fondator Kevora" data-ru="Основатель Kevora">Fondator Kevora</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" data-delay="0.15" style="display:flex;flex-direction:column;gap:14px;">
+
+        <div style="background:var(--mid);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:24px;display:flex;gap:16px;align-items:flex-start;">
+          <div style="font-size:1.6rem;flex-shrink:0;">🎯</div>
+          <div>
+            <div style="font-weight:600;font-size:.95rem;color:var(--cream);margin-bottom:6px;" data-ro="Focus exclusiv smart home" data-ru="Эксклюзивный фокус на smart home">Focus exclusiv smart home</div>
+            <p style="font-size:.85rem;color:var(--silver);line-height:1.65;" data-ro="Nu sunt electrician care face și smart pe lângă. Nu vând televizoare cu module wifi. Doar sisteme de automatizare gândite ca un întreg." data-ru="Я не электрик, который делает smart как побочное занятие. Не продаю телевизоры с wifi-модулями. Только системы автоматизации, продуманные как целое.">Nu sunt electrician care face și smart pe lângă. Nu vând televizoare cu module wifi. Doar sisteme de automatizare gândite ca un întreg.</p>
+          </div>
+        </div>
+
+        <div style="background:var(--mid);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:24px;display:flex;gap:16px;align-items:flex-start;">
+          <div style="font-size:1.6rem;flex-shrink:0;">🔧</div>
+          <div>
+            <div style="font-weight:600;font-size:.95rem;color:var(--cream);margin-bottom:6px;" data-ro="Sistem propriu, integrare proprie" data-ru="Собственная система, собственная интеграция">Sistem propriu, integrare proprie</div>
+            <p style="font-size:.85rem;color:var(--silver);line-height:1.65;" data-ro="Sistemul Kevora rulează local, pe hardware dedicat în casa ta. Fără cloud străin. Aceleași standarde de calitate folosite în vile din Austria și Elveția." data-ru="Система Kevora работает локально, на выделенном оборудовании в вашем доме. Без иностранного облака. Те же стандарты качества, что используются в виллах Австрии и Швейцарии.">Sistemul Kevora rulează local, pe hardware dedicat în casa ta. Fără cloud străin. Aceleași standarde de calitate folosite în vile din Austria și Elveția.</p>
+          </div>
+        </div>
+
+        <div style="background:var(--mid);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:24px;display:flex;gap:16px;align-items:flex-start;">
+          <div style="font-size:1.6rem;flex-shrink:0;">🤝</div>
+          <div>
+            <div style="font-weight:600;font-size:.95rem;color:var(--cream);margin-bottom:6px;" data-ro="Atenție la primii clienți" data-ru="Внимание к первым клиентам">Atenție la primii clienți</div>
+            <p style="font-size:.85rem;color:var(--silver);line-height:1.65;" data-ro="Capacitate limitată la 5 proiecte beta. Fiecare proiect e personal. Nu ești un număr într-un dashboard — ești unul din primii oameni cu care construim ceva." data-ru="Ограниченная вместимость до 5 бета-проектов. Каждый проект персональный. Вы не номер в дашборде — вы один из первых людей, с которыми мы строим что-то.">Capacitate limitată la 5 proiecte beta. Fiecare proiect e personal. Nu ești un număr într-un dashboard — ești unul din primii oameni cu care construim ceva.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+@media(max-width:900px){
+  .about-grid{grid-template-columns:1fr !important;gap:48px !important;}
+}
+</style>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy" style="background:var(--mid);padding:var(--pad);">
+  <div style="max-width:1360px;margin:0 auto;">
+    <div class="reveal" style="text-align:center;max-width:780px;margin:0 auto 56px;">
+      <div class="sec-label" data-ro="Filozofia Kevora" data-ru="Философия Kevora">Filozofia Kevora</div>
+      <h2 class="sec-title" data-ro="De ce facem lucrurile altfel" data-ru="Почему мы делаем по-другому">De ce facem lucrurile altfel</h2>
+      <p class="sec-sub" style="margin:0 auto;" data-ro="Nu vrem să fim cea mai mare companie smart home din Moldova. Vrem să fim cea mai bună pentru clienții noștri." data-ru="Мы не стремимся быть самой большой smart home компанией в Молдове. Мы хотим быть лучшей для наших клиентов.">Nu vrem să fim cea mai mare companie smart home din Moldova. Vrem să fim cea mai bună pentru clienții noștri.</p>
     </div>
     <div class="testi-grid reveal" data-delay="0.1">
-
       <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <div class="testi-text" data-ro="&ldquo;Am instalat Kevora Plus și nu mai pot trăi fără el. Luminile se reglează singure, ușa se blochează automat — economisesc timp și bani în fiecare zi.&rdquo;" data-ru="&ldquo;Установил Kevora Plus и не могу без него жить. Свет регулируется сам, дверь блокируется автоматически — экономлю время и деньги каждый день.&rdquo;">"Am instalat Kevora Plus și nu mai pot trăi fără el. Luminile se reglează singure, ușa se blochează automat — economisesc timp și bani în fiecare zi."</div>
+        <div style="font-size:2rem;margin-bottom:14px;">🏠</div>
+        <div class="testi-text" style="font-style:normal;" data-ro="Nu vindem produse — construim sisteme. Diferența între un bec inteligent și o casă inteligentă e cum gândești întregul. Noi gândim întregul." data-ru="Мы не продаём продукты — мы строим системы. Разница между умной лампой и умным домом — в том, как вы мыслите систему. Мы мыслим систему.">Nu vindem produse — construim sisteme. Diferența între un bec inteligent și o casă inteligentă e cum gândești întregul. Noi gândim întregul.</div>
         <div class="testi-author">
-          <div class="testi-avatar">A</div>
+          <div class="testi-avatar" style="background:linear-gradient(135deg,var(--blue1),var(--blue2));">01</div>
           <div>
-            <div style="font-weight:600;font-size:.9rem;color:var(--cream);" data-ro="Alexandru M." data-ru="Александру М.">Alexandru M.</div>
-            <div style="font-size:.78rem;color:var(--muted);" data-ro="Chișinău — Kevora Plus" data-ru="Кишинёв — Kevora Plus">Chișinău — Kevora Plus</div>
+            <div style="font-weight:600;font-size:.9rem;color:var(--cream);" data-ro="Sistem, nu produs" data-ru="Система, а не продукт">Sistem, nu produs</div>
+            <div style="font-size:.78rem;color:var(--muted);" data-ro="Principiu de proiectare" data-ru="Принцип проектирования">Principiu de proiectare</div>
           </div>
         </div>
       </div>
-
       <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <div class="testi-text" data-ro="&ldquo;Senzorul de apă ne-a salvat de la o inundație. Am primit notificarea în 10 secunde. Vana s-a închis singură. Kevora și-a scos prețul dintr-o singură intervenție.&rdquo;" data-ru="&ldquo;Датчик воды спас нас от затопления. Уведомление пришло за 10 секунд. Кран закрылся сам. Kevora окупился за одно вмешательство.&rdquo;">"Senzorul de apă ne-a salvat de la o inundație. Am primit notificarea în 10 secunde. Vana s-a închis singură. Kevora și-a scos prețul dintr-o singură intervenție."</div>
+        <div style="font-size:2rem;margin-bottom:14px;">🔒</div>
+        <div class="testi-text" style="font-style:normal;" data-ro="Datele tale nu pleacă din casă. Punct. Fără cloud străin, fără servere terțe care colectează ce faci. Tu controlezi sistemul, nu invers." data-ru="Ваши данные не покидают ваш дом. Точка. Без иностранного облака, без сторонних серверов, собирающих ваши данные. Вы управляете системой, а не наоборот.">Datele tale nu pleacă din casă. Punct. Fără cloud străin, fără servere terțe care colectează ce faci. Tu controlezi sistemul, nu invers.</div>
         <div class="testi-author">
-          <div class="testi-avatar">M</div>
+          <div class="testi-avatar" style="background:linear-gradient(135deg,var(--blue1),var(--blue2));">02</div>
           <div>
-            <div style="font-weight:600;font-size:.9rem;color:var(--cream);" data-ro="Marina & Victor T." data-ru="Марина и Виктор Т.">Marina & Victor T.</div>
-            <div style="font-size:.78rem;color:var(--muted);" data-ro="Bălți — Kevora Pro" data-ru="Бэлць — Kevora Pro">Bălți — Kevora Pro</div>
+            <div style="font-weight:600;font-size:.9rem;color:var(--cream);" data-ro="Local-first, mereu" data-ru="Local-first, всегда">Local-first, mereu</div>
+            <div style="font-size:.78rem;color:var(--muted);" data-ro="Principiu de privacy" data-ru="Принцип приватности">Principiu de privacy</div>
           </div>
         </div>
       </div>
-
       <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <div class="testi-text" data-ro="&ldquo;Am luat Custom pentru biroul nostru. Instalarea a durat o zi, totul a funcționat din prima. Echipa Kevora știe ce face — suportul e rapid și profesionist.&rdquo;" data-ru="&ldquo;Взял Custom для нашего офиса. Установка заняла один день, всё заработало сразу. Команда Kevora знает своё дело — поддержка быстрая и профессиональная.&rdquo;">"Am luat Custom pentru biroul nostru. Instalarea a durat o zi, totul a funcționat din prima. Echipa Kevora știe ce face — suportul e rapid și profesionist."</div>
+        <div style="font-size:2rem;margin-bottom:14px;">⚙️</div>
+        <div class="testi-text" style="font-style:normal;" data-ro="Promitem doar ce putem livra. Calitate înaintea volumului. Nu căutăm 100 de proiecte pe an. Căutăm 20-30 proiecte construite impecabil." data-ru="Обещаем только то, что можем выполнить. Качество важнее объёма. Не стремимся к 100 проектам в год. Стремимся к 20-30 безупречно построенным проектам.">Promitem doar ce putem livra. Calitate înaintea volumului. Nu căutăm 100 de proiecte pe an. Căutăm 20-30 proiecte construite impecabil.</div>
         <div class="testi-author">
-          <div class="testi-avatar">D</div>
+          <div class="testi-avatar" style="background:linear-gradient(135deg,var(--blue1),var(--blue2));">03</div>
           <div>
-            <div style="font-weight:600;font-size:.9rem;color:var(--cream);" data-ro="Dmitri L." data-ru="Дмитрий Л.">Dmitri L.</div>
-            <div style="font-size:.78rem;color:var(--muted);" data-ro="Chișinău — Kevora Custom" data-ru="Кишинёв — Kevora Custom">Chișinău — Kevora Custom</div>
+            <div style="font-weight:600;font-size:.9rem;color:var(--cream);" data-ro="Calitate înaintea volumului" data-ru="Качество важнее объёма">Calitate înaintea volumului</div>
+            <div style="font-size:.78rem;color:var(--muted);" data-ro="Principiu de business" data-ru="Принцип бизнеса">Principiu de business</div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -954,23 +1014,13 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
   <div style="max-width:1360px;margin:0 auto;">
 
     <div class="reveal" style="text-align:center;max-width:800px;margin:0 auto 56px;">
-      <div class="sec-label" data-ro="Abonamente" data-ru="Абонементы">Abonamente</div>
-      <h2 class="sec-title" data-ro="Sistemul tău funcționează la capacitate maximă doar cu abonament Kevora" data-ru="Ваша система работает на полную мощность только с абонементом Kevora">Sistemul tău funcționează la capacitate maximă doar cu abonament Kevora</h2>
-      <p class="sec-sub" style="margin:0 auto;" data-ro="Monitorizare, protecție și suport — fără griji, 24/7" data-ru="Мониторинг, защита и поддержка — без забот, 24/7">Monitorizare, protecție și suport — fără griji, 24/7</p>
-    </div>
-
-    <div class="sub-fear reveal" data-delay="0.05">
-      <div class="sub-fear-title" data-ro="⚠️ Fără abonament:" data-ru="⚠️ Без абонемента:">⚠️ Fără abonament:</div>
-      <div class="sub-fear-grid">
-        <div class="fear-item" data-ro="❌ Nu ai suport prioritar" data-ru="❌ Нет приоритетной поддержки">❌ Nu ai suport prioritar</div>
-        <div class="fear-item" data-ro="❌ Nu ai monitorizare activă" data-ru="❌ Нет активного мониторинга">❌ Nu ai monitorizare activă</div>
-        <div class="fear-item" data-ro="❌ Nu ai backup sistem" data-ru="❌ Нет резервного копирования">❌ Nu ai backup sistem</div>
-        <div class="fear-item" data-ro="❌ Intervențiile sunt contra cost (de la 500 lei)" data-ru="❌ Вмешательства за дополнительную плату (от 500 лей)">❌ Intervențiile sunt contra cost (de la 500 lei)</div>
-      </div>
+      <div class="sec-label" data-ro="Suport opțional" data-ru="Опциональная поддержка">Suport opțional</div>
+      <h2 class="sec-title" data-ro="Sistemul tău funcționează perfect și fără noi" data-ru="Ваша система работает идеально и без нас">Sistemul tău funcționează perfect și fără noi</h2>
+      <p class="sec-sub" style="margin:0 auto;" data-ro="Local, sigur, fără cloud — așa l-am construit. Suportul Kevora e pentru cine vrea liniște totală: noi monitorizăm, intervenim, păstrăm backup-ul și răspundem prioritar." data-ru="Локально, безопасно, без облака — так мы его построили. Поддержка Kevora — для тех, кто хочет полного спокойствия: мы мониторим, вмешиваемся, храним резервные копии и отвечаем приоритетно.">Local, sigur, fără cloud — așa l-am construit. Suportul Kevora e pentru cine vrea liniște totală: noi monitorizăm, intervenim, păstrăm backup-ul și răspundem prioritar.</p>
     </div>
 
     <div class="sub-benefits reveal" data-delay="0.1">
-      <div class="sub-ben-title" data-ro="✅ Cu abonament Kevora:" data-ru="✅ С абонементом Kevora:">✅ Cu abonament Kevora:</div>
+      <div class="sub-ben-title" data-ro="Ce primești cu suport Kevora activ:" data-ru="Что вы получаете с активной поддержкой Kevora:">Ce primești cu suport Kevora activ:</div>
       <div class="sub-ben-grid">
         <div class="sub-ben">
           <div class="sub-ben-icon">🔍</div>
@@ -998,7 +1048,7 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
     <div class="fear-water reveal" data-delay="0.12">
       <div class="fear-water-icon">💧</div>
       <div class="fear-water-text">
-        <h4 data-ro="O scurgere nedetectată poate costa 5.000–20.000 lei în reparații" data-ru="Необнаруженная утечка может стоить 5.000–20.000 лей ремонта">O scurgere nedetectată poate costa 5.000–20.000 lei în reparații</h4>
+        <h4 data-ro="O scurgere nedetectată poate costa peste 10.000 lei în reparații. În cazuri grave, paguba depășește 20.000 lei." data-ru="Необнаруженная утечка может стоить более 10.000 лей в ремонте. В тяжёлых случаях ущерб превышает 20.000 лей.">O scurgere nedetectată poate costa peste 10.000 lei în reparații. În cazuri grave, paguba depășește 20.000 lei.</h4>
         <p data-ro="Abonamentul Kevora monitorizează sistemul 24/7 și te alertează instant. Prevenția costă mult mai puțin decât paguba." data-ru="Абонемент Kevora следит за системой 24/7 и мгновенно предупреждает. Профилактика стоит намного меньше ущерба.">Abonamentul Kevora monitorizează sistemul 24/7 și te alertează instant. Prevenția costă mult mai puțin decât paguba.</p>
       </div>
     </div>
@@ -1238,7 +1288,11 @@ footer{background:var(--footer-bg);border-top:1px solid rgba(255,255,255,.06);pa
         </a>
       </div>
     </div>
-    <div class="footer-copy" data-ro="© 2025 Kevora.md — Toate drepturile rezervate" data-ru="© 2025 Kevora.md — Все права защищены">© 2025 Kevora.md — Toate drepturile rezervate</div>
+    <div style="text-align:center;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;color:var(--cream);margin-bottom:4px;letter-spacing:-.01em;" data-ro="Securitate și confort." data-ru="Безопасность и комфорт.">Securitate și confort.</div>
+      <div style="font-size:.78rem;color:var(--silver);letter-spacing:.1em;text-transform:uppercase;" data-ro="Local. Pentru casa ta." data-ru="Локально. Для вашего дома.">Local. Pentru casa ta.</div>
+      <div class="footer-copy" style="margin-top:8px;" data-ro="© 2025 Kevora.md — Toate drepturile rezervate" data-ru="© 2025 Kevora.md — Все права защищены">© 2025 Kevora.md — Toate drepturile rezervate</div>
+    </div>
     <div class="footer-links">
       <a href="#smarthome" data-ro="Smart Home" data-ru="Smart Home">Smart Home</a>
       <a href="#services" data-ro="Servicii" data-ru="Услуги">Servicii</a>
